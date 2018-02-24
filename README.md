@@ -17,7 +17,7 @@ brew install node
 npm install gulp -g
 ```
 
-ローカル・・・インストールしたパッケージをそのプロジェクトフォルダ内のみ使用する。
+ローカル・・・インストールしたパッケージをそのプロジェクトフォルダ内のみ使用する。  
 グローバル・・・そのマシン上のどこからでも利用できるようになる。  
 
 
@@ -26,7 +26,7 @@ npm install gulp -g
 ```
 mkdir [作業ディレクトリ]
 cd [作業ディレクトリ]
-git clone  
+git clone https://github.com/hiroki-tkg/gulp_setting_file.git
 rm -rf .git
 npm init
 ```
@@ -59,8 +59,8 @@ node_modulesはサイズがでかいので、
 
 ```
 ln -s /Users/hiroki_tkg/env/gulp/node_modules ./node_modules
-
 ```
+
 こんな感じで、シンボリックリンクを貼っちゃうのがいいと思う。
 参考:
 https://yatteq.com/gulp-cording03
