@@ -64,7 +64,21 @@ ln -s /Users/hiroki_tkg/env/gulp/node_modules ./node_modules
 こんな感じで、シンボリックリンクを貼っちゃうのがいいと思う。
 参考:
 https://yatteq.com/gulp-cording03
+  
+  
+### 一度上記を実行して、2度目以降の場合
+  
+```
+cd [作業ディレクトリ]
+git clone https://github.com/hiroki-tkg/gulp_setting_file.git
+mv gulp_setting_file/gulpfile.js ./
+rm -rf gulp_setting_file
+ln -s /Users/hiroki_tkg/env/gulp/node_modules ./node_modules
+```
+簡単にいうと、gulpfileを持ってきて、node_moduleをシンボリックリンクで作業ディレクトリに置いてる。  
+これやると、 npm install gulpとか必要なくて、 gulp -v をすると、ローカル/グローバルでgulpが入る。
 
+  
 作成 : `<tkg.japan@gmail.com>`  
 
 
