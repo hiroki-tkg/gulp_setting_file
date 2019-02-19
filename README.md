@@ -27,7 +27,7 @@ npm install gulp -g
 mkdir [作業ディレクトリ]
 cd [作業ディレクトリ]
 git clone https://github.com/hiroki-tkg/gulp_setting_file.git
-rm -rf .git
+rm -rf gulp_setting_file/.git
 npm init
 ```
 
@@ -35,6 +35,7 @@ cloneで、gulpfile.jsが、
 npm initで、package.jsができる(対話形式だけど、全部yesでも大丈夫。)
 
 ローカルにgulpをいれる。
+※ 下記を実行しなくても、ローカルで入ってるいる場合あり
 
 ```
 npm install --save-dev gulp
